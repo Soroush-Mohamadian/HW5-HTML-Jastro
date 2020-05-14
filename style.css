@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+}
+
+ .navBar{
+     width: relative;
+     height: 15vh;
+     display: flex;
+     align-items: center;
+     box-shadow: 10px 10px 10px  5px #f3f1f1;     
+     
+ }
+
+ 
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+  }
+
+  .dropbtn i{
+      color: rgba(61, 167, 61, 0.76);
+      font-size: 2.5rem;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 30vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+#jastroBG{
+    transform: rotateY(180deg);
+    
+   
+    
+}
+.iconAndText h3{
+    
+    position: relative;
+    margin-top: -22vh;
+    margin-left: 45vw;
+    color: rgba(38, 83, 38, 0.76);
+}
+#manutdLogo{
+    
+    position: relative;
+    margin-top: -35vh;
+    margin-left: 65vw;
+}
