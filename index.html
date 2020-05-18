@@ -1,44 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جاسترو</title>
 
 </head>
+
 <body>
-     <div class="container container-sm">
+    <div class="container">
         <div class="mobilePage">
-            <div class="navBar row">
-                <div class="dropdown col-2">
-                    <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </div>
-                  <h2 class="col-auto" style="color: rgba(27, 85, 27, 0.76);">جاسترو</h1>
-                <div class="searchIcon col">
-                    <i class="fa fa-search" style="font-size: 1.8rem; color: rgba(68, 146, 68, 0.76);" ></i>
+            <div class="navBar row d-flex align-items-center">
+                <div class="col-10 d-flex justify-content-start">
+                    <div class="dropdown col-auto">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">صفحه اصلی</a>
+                            <a href="#">ایده ها</a>
+                            <a href="#">ویژگی ها</a>
+                            <a href="#">درباره ما</a>
+                            <a href="#">همکاری با ما</a>
+                            <a href="#">تماس با ما</a>
+                        </div>
+                    </div style="margin-buttom:0;">
+                    <h2 class="col-auto" style="color: rgba(27, 85, 27, 0.76); margin-top: 1.5vh ;">جاسترو</h1>
+                </div>
+                <div class="searchIcon col-2 d-flex justify-content-center">
+                    <i class="fa fa-search" style="font-size: 1.8rem; color: rgba(68, 146, 68, 0.76);"></i>
                 </div>
             </div>
-            <div class="jastroIntro">
+            <div class="jastroIntro ">
                 <img id="jastroBG" src="./export/009_logo_Bg.svg" alt="">
             </div>
-            <div class="iconAndText">
-                <img id="manutdLogo" style="width: 27%;" src="./export/manchester-united-logo-vector.png" alt="">
-                <h3>جاسترو</h3>
+            <div class="row manutdText d-flex justify-content-center align-items-center offset-5">
+
+                <img class="manutdLogo col-5" style="width: 27%;" src="./export/manchester-united-logo-vector.png"
+                    alt="">
+                <h3 class="col-auto"> جاسترو</h3>
+
             </div>
-            
+            <div class="greenLine"></div>
+            <div class="introText col-auto">
+                <h2>بهتر بشناسید</h2>
+                <p>لورم ایپسون متن ساختگی با تولید سادگی
+                    نامفهوماز صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگر ها ومتون بلکه روزنامه و مجله در ستون و
+                    سطر آنچنان که لازم است و برای شرایط فلی تکنولوزی.
+                </p>
+            </div>
+            <div class="Hscroll container">
+                <div class="row">
+                    <img class="col-auto cityBG" src="./export/002_slide1_bg.png" alt="">
+                    <img class="col-7 sittingWoman" src="./export/001_slide1_woman_view.svg" alt="">
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: -2vh; margin-bottom: 2vh;">
+                <div class="slideSelector">
+                    <div class=" scrollCircles"></div>
+                    <div class=" scrollCircles"></div>
+                    <div class=" scrollCircles"></div>
+                </div>
+            </div>
+            <img style="width: 200%;" src="./export/011_bg_wave.svg" alt="">
+
+            <div class=" scrollmenu mr-0 ">
+                <a class='col-2 justify-content-center align-items-center' href="#home"><img style="width: 100%;"
+                        src="./export/013_icon_didani.svg" alt=""></a>
+                <a class='col-2 justify-content-center align-items-center' href="#news"><img style="width: 100%;"
+                        src="./export/014_icon_restaurant.svg" alt=""></a>
+                <a class='col-2 justify-content-center align-items-center' href="#contact"><img style="width: 100%;"
+                        src="./export/015_icon_hotel.svg" alt=""></a>
+                <a class='col-2 justify-content-center align-items-center' href="#about"><img style="width: 100%;"
+                        src="./export/016_icon_fly.svg" alt=""></a>
+                <a class='col-2 justify-content-center align-items-center' href="#about"><img style="width: 100%;"
+                        src="./export/017_icon_nearme.svg" alt=""></a>
+                <a class='col-2 justify-content-center align-items-center' href="#about"><img style="width: 100%;"
+                        src="./export/018_icon_favorites.svg" alt=""></a>
+
+            </div>
+            <div class="hotelsText" style="text-align: justify;">
+                <h3>هتل‌ها، جستجو و رزرو کنید</h3>
+                <br>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی </p>
+            </div>
+            <div class="appDL ">
+                <img style="width: 35%;" src="./export/021_dlbox_icon_download.svg" alt="">
+                <h4>دانلود اپلیکیشن جاسترو</h4>
+                <p>با وارد کردن شماره همراه خود در کادر پایین لینک دانلود اپلیکیشنرو دریافت کنید</p>
+                <input type="number" placeholder="شماره خود را وارد کنید"
+                    style="text-align: center; width: 90%; background-color: rgb(235, 232, 231); border: 2px rgb(207, 206, 206) solid; border-radius: 13px; ">
+                <button class="dl">دانلود</button>
+                <p>با یکی از روشهای زیر اپلیکیشن جاسترو رو دانلود کنید</p>
+                <div class="dlButtons"
+                    style="width: 100%; height: 33vh; display: flex; justify-content: space-around; align-items: center; flex-direction: column; ">
+                    <button class="dlButton">Google Play</button>
+                    <button class="dlButton">کافه بازار </button>
+                    <button class="dlButton">دانلود مستقیم</button>
+                </div>
+            </div>
         </div>
-     </div>
+    </div>
+
     <script src="./main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
