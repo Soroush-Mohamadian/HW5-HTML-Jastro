@@ -1,19 +1,42 @@
+
+
+@font-face {
+  font-family: Vazir;
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff2') format('woff2'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff') format('woff'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.woff2') format('woff2'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.woff') format('woff'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
 body {
+  font-family: 'Vazir';
     margin: 0;
     direction: rtl;
     display: flex;
     flex-direction: column;
     text-align: right;
-    background-color: rgb(248, 246, 246);
     
 }
 
  .navBar{
      width: relative;
-     height: 15vh;
+     height: 13vh;
      display: flex;
      align-items: center;
-     box-shadow: 10px 10px 10px  5px #f3f1f1;     
+     box-shadow: 10px 10px 10px  5px #f3f1f1;    
+     width: 120%;
      
  }
 
@@ -37,7 +60,9 @@ body {
   
   /* Dropdown button on hover & focus */
   .dropbtn:focus {
-    background-color: rgb(104, 245, 146);
+    background-color: rgb(145, 224, 201);
+    border-radius: 50%;
+    outline: none;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -81,6 +106,8 @@ body {
 .manutdText{
 margin-top: -20vh;
 margin-bottom: 14vh;
+width: 60vw;
+
 
 }
 
@@ -110,14 +137,16 @@ margin-bottom: 14vh;
   justify-content: space-around;
   align-items: center;
   width: 20vw;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
   
   
 }
 
 .scrollCircles{
   background-color: rgb(194, 194, 194);
-  width: 2.7vw;
-  height: 1.7vh;
+  width: 14px;
+  height: 14px;
   border-radius: 100rem;
 }
 
@@ -128,13 +157,14 @@ div.scrollmenu {
   width: 100%;
   margin-top: -7vh;
   margin-bottom:5vh ;
+  
 }
 
 div.scrollmenu a {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 7vw;
   text-decoration: none;
   
   border-radius: 100%;
@@ -142,7 +172,8 @@ div.scrollmenu a {
 }
 
 div.scrollmenu a:hover {
-  background-color: rgb(219, 123, 44);
+  background-image: linear-gradient(to bottom, rgb(250, 184, 131), rgb(255, 108, 50));
+  
   
 }
 .hotelsText{
@@ -152,23 +183,26 @@ div.scrollmenu a:hover {
 }
 
 .appDL{
+  padding: 2vh 4vw;
   height: 120vh; 
   display: flex; 
   justify-content: space-around; 
   align-items: center; 
   flex-direction: column; 
   text-align: center;
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgb(212, 211, 211);
+  margin-bottom: 10vh;
 }
 .appDL input{
   
   text-align: center; 
-  width: 90%; 
-  background-color: rgb(235, 232, 231); 
-  border: 2px rgb(207, 206, 206) solid; 
-  border-radius: 13px; 
+  width: 90%;
+  height: 7vh; 
+  background-color: rgb(250, 250, 250); 
+  border: 2px rgb(226, 226, 226) solid; 
+  border-radius: 40px; 
 }
 
 .dl{
@@ -185,10 +219,128 @@ height: 7vh;
 .dlButton{
   text-align: center;
 color: white;
-background-image: linear-gradient(to right,rgb(104, 247, 187) , rgb(0, 170, 133));
+background-image: linear-gradient(to right,rgb(106, 226, 176) , rgb(0, 170, 133));
 border: none;
 outline: none;
 width: 50%;
 border-radius: 30px;
 height: 7vh;
+}
+
+.readyForTrip{
+  color: whitesmoke;
+  height: 55vh;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  flex-direction: column; 
+  text-align: justify;
+  background-image: url(./export/earth\ map.jpg);
+  margin-bottom: 6vh;
+  padding: 3vh 5vw;
+  border-radius: 20px;
+}
+
+.tripIdeas{
+  height: 35vh;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  flex-direction: column; 
+  text-align: justify;
+  margin-bottom: 5vh;
+  
+}
+
+div.picMenu {
+  
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 7vh;
+}
+
+div.picMenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.picMenu a img{
+  width: 55vw;
+  height: 20vh;
+  border-radius: 10px;
+}
+
+.emailPart{
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  flex-direction: column; 
+  text-align: center;
+  height: 110%;
+  margin-bottom: 10vh;
+  background-color: rgb(225, 252, 248);
+  padding-top: 3vh;
+  
+}
+
+.footer .emailPart .emailInput{
+  text-align: center; 
+  width: 90%;
+  height: 7vh; 
+  background-color: rgb(255, 255, 255); 
+  border: none;
+  border-radius: 40px; 
+  box-shadow: 5px 5px 15px rgb(175, 201, 176);
+  margin-top: -2vh;
+}
+
+.footer .emailPart .getEmail{
+  text-align: center;
+color: white;
+background-image: linear-gradient(to right,rgb(231, 142, 101) , rgb(255, 60, 0));
+border: none;
+outline: none;
+width: 50%;
+border-radius: 30px;
+height: 8vh;
+}
+
+.contact{
+  
+  padding: 4vh 0;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  height:60vh ;
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.limkRow .col-3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.emptyCircle{
+  height: 10px;
+  width: 10px;
+  border: 2px whitesmoke solid;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-top: 5px;
+
+  
+}
+
+.links{
+  color: whitesmoke;
+}
+
+.links:focus{
+color:rgb(255, 60, 0) ;
 }
